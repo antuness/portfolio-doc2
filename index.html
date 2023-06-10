@@ -1,0 +1,272 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Indicadores Estratégicos</title>
+  <meta name="description" content="Indicadores">
+  <meta name="author" content="Samira Antunes">
+
+
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Tooltips con CSS</title>
+
+</head>
+
+<body>
+  <div class="container">	
+    <div class="row">
+  	  <div class="two-thirds column">
+        <h2>Indicadores Estratégicos</h2>
+
+        <div id="progress_bar"></div>
+  	  	<form class="questions_box">
+
+        
+
+  	  		<div id="question-0">
+  	  		  <h2>Seja bem-vindo</h2>
+  	  			<h3>
+              <p>
+                Este formulário é para auxiliar você e sua empresa a entender a relação
+                entre modelo de negócio e estratégia de negócio em que sua empresa
+                está atualmente.
+
+                <fieldset class="grupo">
+                  <div class="campo">
+                    <label for="nome"><strong>Primeiro Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                  </div>
+  
+                  <div class="campo">
+                      <label for="sobrenome"><strong>Sobrenome</strong></label>
+                      <input type="text" name="sobrenome" id="sobrenome" required>
+                  </div>
+              </fieldset> 
+              </p></h3>
+  				  <div id="submit0" class="button" >Iniciar</div>
+  			  </div>
+
+          <div id="question-1">
+  	  		  <h2>Questão 1</h2>
+  	  			<h3>
+              <a class="tooltip">A empresa analisa os benefícios oferecidos aos clientes?
+                <i class="fas fa-info-circle"></i>
+                <span class="tooltip-box">A análise de benefícios oferecidos aos clientes difere a empresa da concorrência e considera mudanças nos benefícios oferecidos aos clientes.</span>
+              </a>
+            </h3>
+  	  			<input id="question-1-answer-a" type="radio" name="favelang" value=10000> Sim<br>
+  				  <input id="question-1-answer-b" type="radio" name="favelang" value=0> Não<br>
+  				  <input id="question-1-answer-c" type="radio" name="favelang" value=0> Não sei informar<br>
+  				  <div id="submit1" class="button" onclick="check()">Enviar Resposta</div>
+            <button 
+              onclick=window.location.reload()
+              class ="button">Reiniciar a Pesquisa</button>
+            <div class="clearfix"></div>
+  			  </div>
+
+  			 <div id="question-2">
+  				 <h2>Questão 2</h2>
+  				 <h3>
+            <a class="tooltip">A análise de benefícios avalia as necessidades, expectativas, satisfação e fidelidade dos clientes?
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-box">As análises do negócio consideram mudanças no segmento de clientes e cada segmento possui sua própria estratégia baseada em suas particularidades.</span>
+            </a>
+          </h3>
+  	  		 <input id="question-2-answer-a" type="radio" name="favelang" value="1000"> Sim<br>
+  				 <input id="question-2-answer-b" type="radio" name="favelang" value="0"> Não<br>
+  				 <input id="question-2-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+  				 <div id="submit2" class="button" onclick="check()">Enviar Resposta</div>
+           <button 
+           onclick=window.location.reload()
+           class ="button">Reiniciar a Pesquisa</button>
+           <div class="clearfix"></div>
+  			 </div>
+  			
+  			 <div id="question-3">	
+  				 <h2>Questão 3</h2>
+  				 <h3>
+            <a class="tooltip">A empresa faz análises internas e externas para desenvolver as formas de conexão com os clientes?
+            <i class="fas fa-info-circle"></i>
+            <span class="tooltip-box">A empresa altera suas estratégias de relacionamento de acordo com a segmentação de clientes, ou altera suas estratégias de relacionamento ao utilizar o retorno dos clientes sobre suas satisfações e insatisfações.</span>
+          </a>
+           </h3>
+  	  		 <input id="question-3-answer-a" type="radio" name="favelang" value="1000"> Sim<br>
+  				 <input id="question-3-answer-b" type="radio" name="favelang" value="0"> Não<br>
+  				 <input id="question-3-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+  				 <div id="submit3" class="button" onclick="check()">Enviar Resposta</div>
+           <button 
+           onclick=window.location.reload()
+           class ="button">Reiniciar a Pesquisa</button>
+           <div class="clearfix"></div>
+  			 </div>
+
+         <div id="question-4">
+            <h2>Questão 4</h2>
+            <h3>
+              <a class="tooltip">A empresa faz análises internas e externas para avaliar seus canais de comunicação com os clientes?
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-box">A empresa altera suas estratégias de comunicação de acordo com a segmentação de clientes, ou altera suas estratégias de comunicação ao considerar o retorno dos clientes sobre suas satisfações e insatisfações.</span>
+            </a>
+            </h3>
+            <input id="question-4-answer-a" type="radio" name="favelang" value="1000"> Sim<br>
+            <input id="question-4-answer-b" type="radio" name="favelang" value="0"> Não<br>
+            <input id="question-4-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+            <div id="submit4" class="button" onclick="check()">Enviar Resposta</div>
+            <button 
+            onclick=window.location.reload()
+            class ="button">Reiniciar a Pesquisa</button>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-5">
+            <h2>Questão 5</h2>
+            <h3>
+              <a class="tooltip">As principais atividades da empresa são revalidadas após a análise?
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-box">A empresa possui estratégias de geração de inteligência de mercado em toda a organização, disseminação de inteligência entre os departamentos e capacidade de resposta.</span>
+            </a>
+            </h3>
+            </h3>
+            <input id="question-5-answer-a" type="radio" name="favelang" value="100"> Sim<br>
+            <input id="question-5-answer-b" type="radio" name="favelang" value="0"> Não<br>
+            <input id="question-5-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+            <div id="submit5" class="button" onclick="check()">Enviar Resposta</div>
+            <button 
+            onclick=window.location.reload()
+            class ="button">Reiniciar a Pesquisa</button>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-6">
+            <h2>Questão 6</h2>
+            <h3>
+              <a class="tooltip">A empresa possui recursos necessários para entregar os benefícios oferecidos aos clientes?
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-box">
+                <p>
+                  A empresa possui estratégias para analisar quais recursos devem ser maximizados para entregar os benefícios oferecidos aos clientes, permitindo a empresa agir às condições turbulentas do mercado de forma eficaz.
+                </p>
+              </span>
+            </a>
+            </h3>
+            <input id="question-6-answer-a" type="radio" name="favelang" value="100"> Sim<br>
+            <input id="question-6-answer-b" type="radio" name="favelang" value="0"> Não<br>
+            <input id="question-6-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+            <div id="submit6" class="button" onclick="check()">Enviar Resposta</div>
+            <button 
+            onclick=window.location.reload()
+            class ="button">Reiniciar a Pesquisa</button>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-7">
+            <h2>Questão 7</h2>
+            <h3>
+              <a class="tooltip">A empresa efetivamente faz parcerias lucrativas para entregar os benefícios oferecidos aos clientes?
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-box">A empresa gera estratégias focando em maneiras pelas quais pode usar seus pontos fortes para aproveitar as oportunidades de negócio de forma a lutar competitivamente com o mercado.</span>
+            </a>
+            </h3>
+            <input id="question-7-answer-a" type="radio" name="favelang" value="100"> Sim<br>
+            <input id="question-7-answer-b" type="radio" name="favelang" value="0"> Não<br>
+            <input id="question-7-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+            <div id="submit7" class="button" onclick="check()">Enviar Resposta</div>
+            <button 
+            onclick=window.location.reload()
+            class ="button">Reiniciar a Pesquisa</button>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-8">
+            <h2>Questão 8</h2>
+            <h3>
+              <a class="tooltip">A análise das fontes de receita considera mudanças nos benefícios oferecidos, segmentação de clientes, parceiros alternativos ou melhorias nas principais atividades?
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-box">As fontes de receita são analisadas estrategicamente, por meio de indicadores de desempenho, permitindo que a empresa pondere como ganha dinheiro em cada segmento de clientes.</span>
+            </a>
+            </h3>
+            <input id="question-8-answer-a" type="radio" name="favelang" value="10"> Sim<br>
+            <input id="question-8-answer-b" type="radio" name="favelang" value="0"> Não<br>
+            <input id="question-8-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+            <div id="submit8" class="button" onclick="check()">Enviar Resposta</div>
+            <button 
+            onclick=window.location.reload()
+            class ="button">Reiniciar a Pesquisa</button>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-9">
+            <h2>Questão 9</h2>
+            <h3>
+              <a class="tooltip">A análise da estrutura de custos considera mudanças nos benefícios oferecidos, segmentação de clientes, parceiros alternativos ou melhorias nas principais atividades?
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-box">A estrutura de custos é analisada estrategicamente, por meio de indicadores de desempenho, permitindo que a empresa minimize os custos em cada área da estrutura organizacional, projetando, produzindo e comercializando de forma mais eficiente que seus concorrentes.</span>
+            </a>
+            </h3>
+            <input id="question-9-answer-a" type="radio" name="favelang" value="10"> Sim<br>
+            <input id="question-9-answer-b" type="radio" name="favelang" value="0"> Não<br>
+            <input id="question-9-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+            <div id="submit9" class="button" onclick="check()">Enviar Resposta</div>
+            <button 
+            onclick=window.location.reload()
+            class ="button">Reiniciar a Pesquisa</button>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-10">
+            <h2>Questão 10</h2>
+            <h3>
+              <a class="tooltip">A empresa faz análises externas dos concorrentes para desenvolver suas estratégias de mercado?
+              <i class="fas fa-info-circle"></i>
+              <span class="tooltip-box">As estratégias macroeconômicas são consideradas, quando há análises externas para entendimento da concorrência.</span>
+            </a>
+            </h3>
+            <input id="question-10-answer-a" type="radio" name="favelang" value="1"> Sim<br>
+            <input id="question-10-answer-b" type="radio" name="favelang" value="0"> Não<br>
+            <input id="question-10-answer-c" type="radio" name="favelang" value="0"> Não sei informar<br>
+            <div id="submit10" class="button" onclick="check()">Enviar Resposta</div>
+            <button 
+            onclick=window.location.reload()
+            class ="button">Reiniciar a Pesquisa</button>
+            <div class="clearfix"></div>
+          </div>
+
+          
+         <div id="question-11"> 
+           <h2>Obrigado por responder o formulário!</h2>
+           <h3>Sua pontuação é: </h3>
+           <h1 id=printtotalscore></h1>
+           <p id=printscoreinfo></p>
+           <div class="switch">
+            <p>
+              <input type="checkbox" id="switch">Clique na checkbox e veja detalhes do Constructo</p>
+           </div>
+        <img src="img/img0.JPG" id="imagem" />
+        <p>
+           <button 
+           onclick=window.location.reload()
+           class ="button">Reiniciar a Pesquisa</button>
+          </p>
+         </div>
+
+         <footer>
+          <div id = "footer_content">
+            <p>
+              Este fomulário é um modelo de teste e não salva seus dados em um banco de dados.
+              <br> Os campos Primeiro Nome e Sobrenome não são obrigatórios.
+              <br> Se pelo menos uma questão não tiver resposta, o resultado será inconclusivo.
+            </p>
+          </div>
+         </footer>
+
+  				
+  	  	</form>
+
+  	  </div>
+  	</div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
